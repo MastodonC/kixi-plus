@@ -10,7 +10,12 @@
 
 ;; we use delta to make our diffs better
 ;; https://github.com/dandavison/magit-delta
-(add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
+
+(if (executable-find "delta")
+    (progn
+      (message "delta found. Adding magit-delta-mode")
+      (add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1))))
+  (message "delta diff programme not found. Using standard magit-diff."))
 
 (require 'magit-todos)
 
