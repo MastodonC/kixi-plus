@@ -38,7 +38,8 @@
 (customize-set-variable 'desktop-path (list emacs-state-home "~"))
 (desktop-save-mode 1)
 
-(customize-set-variable 'url-cookie-file (expand-file-name "url/cookies"))
+(customize-set-variable 'url-cookie-file (expand-file-name "url/cookies" emacs-state-home))
+(customize-set-variable 'url-cache-directory (expand-file-name "url/cache" emacs-state-home))
 
 (customize-set-variable 'request-storage-directory (expand-file-name "request" emacs-state-home))
 
