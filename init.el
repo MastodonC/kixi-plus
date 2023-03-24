@@ -9,14 +9,14 @@
 (setq guix-p (stringp (getenv "GUIX_PROFILE")))
 
 ;; Package setup
-(eval-when-compile
-  (package-initialize)
-  (unless (package-installed-p 'use-package)
-    (package-refresh-contents)
-    (package-install 'use-package))
-  (require 'use-package)
-  (setq use-package-always-defer t
-        use-package-verbose t))
+;; (eval-when-compile
+;;   (package-initialize)
+;;   (unless (package-installed-p 'use-package)
+;;     (package-refresh-contents)
+;;     (package-install 'use-package))
+;;   (require 'use-package)
+;;   (setq use-package-always-defer t
+;;         use-package-verbose t))
 
 (defun safe-getenv (env)
   "Provides a safe way to retrieve environment variables from ENV.
