@@ -16,8 +16,10 @@
 (customize-set-variable 'tool-bar-mode nil)
 
 (add-hook 'text-mode-hook #'turn-on-auto-fill)
+(diminish 'auto-fill-function "🪣") ; sneaky, sneaky auto-fill-mode
 
 (add-hook 'text-mode-hook #'flyspell-mode)
+(diminish 'flyspell-mode "📔")
 ;; (add-hook 'prog-mode-hook #'flyspell-prog-mode)
 
 (show-paren-mode +1)
@@ -80,6 +82,7 @@
 (add-hook 'after-save-hook #'executable-make-buffer-file-executable-if-script-p)
 
 ;;; eldoc config
+(diminish 'eldoc-mode)
 (add-to-list 'display-buffer-alist
              '("^\\*eldoc for" display-buffer-at-bottom
                (window-height . 4)))
@@ -102,6 +105,7 @@
 (setq vundo-glyph-alist vundo-unicode-symbols)
 
 (require 'command-log-mode)
+(diminish 'command-log-mode "⭐")
 (global-command-log-mode 1)
 
 (keycast-tab-bar-mode)

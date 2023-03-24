@@ -17,20 +17,6 @@
 (setq ef-themes-disable-other-themes t)
 (load-theme 'ef-bio :no-confirm)
 
-(require 'diminish)
-(diminish 'rainbow-mode "🌈")
-(diminish 'highlight-indent-guides-mode "👋")
-(diminish 'yas-minor-mode "🥱")
-(diminish 'paredit-mode "()")
-(diminish 'eldoc-mode)
-(diminish 'command-log-mode "⭐")
-(diminish 'which-key-mode "💖")
-(diminish 'clj-refactor-mode "🏗️")
-(diminish 'aggressive-indent-mode "😈")
-(diminish 'flyspell-mode "📔")
-;; (diminish 'flymake-mode"🦋")
-
-(customize-set-variable 'flymake-mode-line-format '("🦋" flymake-mode-line-exception flymake-mode-line-counters))
 (setq ef-themes-to-toggle '(ef-bio ef-cherie))
 
 (when (display-graphic-p)

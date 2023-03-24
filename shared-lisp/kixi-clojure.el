@@ -10,9 +10,10 @@
 ;;  cider-prompt-for-symbol nil
 ;;  )
 
+(require 'diminish)
 (require 'clojure-mode)
 (require 'clj-refactor)
-(require 'yasnippet)
+(diminish 'clj-refactor-mode "🏗")
 (require 'cider)
 (customize-set-variable 'cider-eval-spinner-type 'vertical-breathing)
 (customize-set-variable 'cider-mode-line

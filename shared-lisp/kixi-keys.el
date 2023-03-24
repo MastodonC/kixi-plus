@@ -3,6 +3,7 @@
 ;;; Commentary:
 
 ;;; Code:
+(customize-set-variable 'flymake-mode-line-format '("🦋" flymake-mode-line-exception flymake-mode-line-counters))
 (require 'flymake)
 (require 'paredit)
 

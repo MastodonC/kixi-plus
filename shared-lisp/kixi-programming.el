@@ -3,6 +3,7 @@
 ;;; Commentary:
 ;;;
 ;;; Code:
+(diminish 'yas-minor-mode "🥱")
 (require 'paredit)
 (add-hook 'emacs-lisp-mode-hook #'paredit-mode)
 (add-hook 'clojure-mode-hook #'paredit-mode)
@@ -26,22 +27,29 @@
 (yas-global-mode 1)
 
 (require 'consult-yasnippet)
-
 (require 'aggressive-indent)
-(global-aggressive-indent-mode 1)
+(diminish 'aggressive-indent-mode "😈")
+(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
+(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
+(add-hook 'clojurescript-mode-hook #'aggressive-indent-mode)
+(add-hook 'clojurec-mode-hook #'aggressive-indent-mode)
+(add-hook 'cider-repl-mode-hook #'aggressive-indent-mode)
 
 (require 'rainbow-mode)
+(diminish 'rainbow-mode "🌈")
 (add-hook 'prog-mode-hook #'rainbow-mode)
 
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (require 'highlight-indent-guides)
+(diminish 'highlight-indent-guides-mode "👋")
 (add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
 
 ;; Let’s use highlight symbol for now C-x w .
-;; (require 'auto-highlight-symbol)
-;; (add-hook 'prog-mode-hook #'auto-highlight-symbol-mode)
+(require 'auto-highlight-symbol)
+(diminish 'auto-highlight-symbol-mode "💡")
+(add-hook 'prog-mode-hook #'auto-highlight-symbol-mode)
 
 (customize-set-variable 'ediff-window-setup-function 'ediff-setup-windows-plain)
 (require 'ediff)

@@ -23,6 +23,7 @@
 (add-hook 'prog-mode-hook (lambda () (hl-todo-mode)))
 
 (require 'git-auto-commit-mode)
+(diminish 'git-auto-commit-mode "📝")
 
 (provide 'kixi-git)
 

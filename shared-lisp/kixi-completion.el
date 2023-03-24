@@ -5,6 +5,7 @@
 ;;; Code:
 ;; vertico
 (require 'which-key)
+(diminish 'which-key-mode "💖")
 (which-key-mode)
 
 (customize-set-variable 'vertico-cycle t)
