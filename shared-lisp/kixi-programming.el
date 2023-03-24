@@ -85,7 +85,7 @@
   (add-hook 'clojure-mode-hook #'eglot-ensure))
 
 (with-eval-after-load 'eglot
-  (add-to-list 'eglot-server-programs 
+  (add-to-list 'eglot-server-programs
                '(nix-mode . ("/etc/profiles/per-user/bld/bin/rnix-lsp"))))
 (add-hook 'nix-mode-hook #'eglot-ensure)
 
