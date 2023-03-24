@@ -31,8 +31,6 @@
                   file-name-handler-alist (delete-dups
 					   (append file-name-handler-alist
 						   old-file-name-handler)))))
-;; best-effort to early-load modus theme.
-(ignore-errors (load-theme 'modus-vivendi t nil))
 
 (message "Early init loaded.")
 
