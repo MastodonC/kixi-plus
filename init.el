@@ -37,7 +37,9 @@ Examples TODO."
   :type 'boolean :group 'Help)
 
 (add-hook 'after-init-hook
-          (lambda () (if new-emacs-user (help-quick-toggle))))
+          (lambda () 
+            (if
+                (and (version< "29.0" emacs-version) new-emacs-user) (help-quick-toggle))))
 
 ;;; Shared emacs config packages
 (require 'kixi-locations)
