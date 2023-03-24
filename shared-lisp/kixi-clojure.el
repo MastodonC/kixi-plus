@@ -23,10 +23,12 @@
 
 (diminish 'clojure-mode "λ")
 
+;; yasnippet should be in the hook from prog-mode
+;; (require 'yasnippet)
 (add-hook 'clojure-mode-hook
           (lambda ()
             (clj-refactor-mode 1)
-            (yas-minor-mode 1)
+            ;; (yas-minor-mode 1)
             (cljr-add-keybindings-with-prefix "C-c C-r")))
 
 (require 'clj-deps-new)

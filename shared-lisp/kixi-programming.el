@@ -3,8 +3,16 @@
 ;;; Commentary:
 ;;;
 ;;; Code:
+
+(require 'yasnippet)
+;; (yas-global-mode 1)
 (diminish 'yas-minor-mode "🥱")
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
+(require 'consult-yasnippet)
+
 (require 'paredit)
+(diminish 'paredit-mode ")")
 (add-hook 'emacs-lisp-mode-hook #'paredit-mode)
 (add-hook 'clojure-mode-hook #'paredit-mode)
 (add-hook 'clojurescript-mode-hook #'paredit-mode)
@@ -23,10 +31,6 @@
   (transpose-sexps -1)
   (backward-sexp))
 
-(require 'yasnippet)
-(yas-global-mode 1)
-
-(require 'consult-yasnippet)
 (require 'aggressive-indent)
 (diminish 'aggressive-indent-mode "😈")
 (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
