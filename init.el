@@ -46,8 +46,6 @@ Examples TODO."
 (require 'kixi-basics)
 (require 'kixi-theme)
 (require 'kixi-completion)
-(require 'kixi-meow)
-(require 'kixi-keys)
 (require 'kixi-git)
 (require 'kixi-magit-repolist)
 (require 'kixi-org)
@@ -55,6 +53,10 @@ Examples TODO."
 (require 'kixi-programming)
 (require 'kixi-clojure)
 (require 'kixi-r)
+
+;; Key rebinding at the end
+(require 'kixi-meow)
+(require 'kixi-keys)
 
 ;;; Personal Emacs config
 (when (file-exists-p (expand-file-name "personal-init.el" (concat user-emacs-directory "personal-lisp/")))
