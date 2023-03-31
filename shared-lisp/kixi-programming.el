@@ -92,6 +92,12 @@
 (require 'flymake)
 (add-hook 'prog-mode-hook #'flymake-mode)
 
+(require 'hideshow)
+(require 'reveal)
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+(add-hook 'prog-mode-hook #'reveal-mode)
+
+
 (provide 'kixi-programming)
 
 ;;; kixi-programming.el ends here
