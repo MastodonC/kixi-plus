@@ -97,6 +97,8 @@
 (add-hook 'prog-mode-hook #'hs-minor-mode)
 (add-hook 'prog-mode-hook #'reveal-mode)
 
+(require 'topsy)
+(add-hook 'prog-mode-hook #'topsy-mode)
 
 (provide 'kixi-programming)
 

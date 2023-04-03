@@ -20,6 +20,9 @@
 (add-hook 'diary-list-entries-hook 'diary-include-other-diary-files)
 (add-hook 'diary-mark-entries-hook 'diary-mark-included-diary-files)
 
+(require 'org-sticky-header)
+(add-hook 'org-mode-hook #'org-sticky-header-mode)
+
 (provide 'kixi-org)
 
 ;;; kixi-org.el ends here
