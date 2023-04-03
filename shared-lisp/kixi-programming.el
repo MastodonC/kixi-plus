@@ -100,6 +100,10 @@
 (require 'topsy)
 (add-hook 'prog-mode-hook #'topsy-mode)
 
+;; but we want to know more, and in the modeline
+(require 'which-func)
+(add-hook 'prog-mode-hook #'which-function-mode)
+
 (provide 'kixi-programming)
 
 ;;; kixi-programming.el ends here
