@@ -9,6 +9,9 @@
 
 (require 'paredit)
 
+(require 'embark)
+(define-key embark-heading-map "T" #'titlecase-line)
+
 ;;; consult rebindings
 (bind-key "C-x b" #'consult-buffer)
 (bind-key "C-x C-b" #'ibuffer)
