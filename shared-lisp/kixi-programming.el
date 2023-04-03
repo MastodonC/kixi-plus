@@ -51,9 +51,9 @@
 (add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
 
 ;; Let’s use highlight symbol for now C-x w .
-(require 'auto-highlight-symbol)
-(diminish 'auto-highlight-symbol-mode "💡")
-(add-hook 'prog-mode-hook #'auto-highlight-symbol-mode)
+;; (require 'auto-highlight-symbol)
+;; (diminish 'auto-highlight-symbol-mode "💡")
+;; (add-hook 'prog-mode-hook #'auto-highlight-symbol-mode)
 
 (customize-set-variable 'ediff-window-setup-function 'ediff-setup-windows-plain)
 (require 'ediff)
