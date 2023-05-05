@@ -27,12 +27,7 @@
 (electric-pair-mode +1)
 (electric-quote-mode +1)
 
-(add-hook 'after-init-hook (lambda () (require 'digit-groups)))
-(digit-groups-global-mode t)
-
 (add-hook 'after-init-hook (lambda () (require 'titlecase)))
-
-"Foo Bar Bazle"
 
 (setq
  backup-by-copying t      ; don't clobber symlinks
