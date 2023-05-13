@@ -27,7 +27,10 @@
 (electric-pair-mode +1)
 (electric-quote-mode +1)
 
-(add-hook 'after-init-hook (lambda () (require 'titlecase)))
+;; (add-hook 'after-init-hook (lambda () (require 'digit-groups)))
+;; (digit-groups-global-mode t)
+
+;; (add-hook 'after-init-hook (lambda () (require 'titlecase)))
 
 (setq
  backup-by-copying t      ; don't clobber symlinks
@@ -106,9 +109,9 @@
 (require 'vundo)
 (setq vundo-glyph-alist vundo-unicode-symbols)
 
-(require 'command-log-mode)
-(diminish 'command-log-mode "⭐")
-(global-command-log-mode 1)
+;; (require 'command-log-mode)
+;; (diminish 'command-log-mode "⭐")
+;; (global-command-log-mode 1)
 
 (keycast-tab-bar-mode)
 

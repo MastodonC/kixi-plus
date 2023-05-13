@@ -32,7 +32,7 @@
             (cljr-add-keybindings-with-prefix "C-c C-r")))
 
 (require 'clj-deps-new)
-(require 'neil)
+;; (require 'neil)
 
 (defun clerk-show ()
   "Show the current buffer in a clerk managed browser window."

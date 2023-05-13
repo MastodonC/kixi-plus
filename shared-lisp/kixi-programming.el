@@ -58,8 +58,8 @@
 (customize-set-variable 'ediff-window-setup-function 'ediff-setup-windows-plain)
 (require 'ediff)
 
-(customize-set-variable 'separedit-default-mode 'markdown-mode)
-(require 'separedit)
+;; (customize-set-variable 'separedit-default-mode 'markdown-mode)
+;; (require 'separedit)
 (require 'markdown-mode)
 
 (setq markdown-command "multimarkdown")
@@ -67,7 +67,7 @@
 
 
 (require 'csv-mode)
-(require 'commify)
+;; (require 'commify)
 
 (customize-set-variable 'eglot-connect-timeout 600)
 (setq eglot-autoshutdown t)
@@ -97,8 +97,8 @@
 (add-hook 'prog-mode-hook #'hs-minor-mode)
 (add-hook 'prog-mode-hook #'reveal-mode)
 
-(require 'topsy)
-(add-hook 'prog-mode-hook #'topsy-mode)
+;; (require 'topsy)
+;; (add-hook 'prog-mode-hook #'topsy-mode)
 
 ;; but we want to know more, and in the modeline
 (require 'which-func)
