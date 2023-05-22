@@ -7,7 +7,7 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
-(require 'pinentry)
+;; (require 'pinentry)
 (require 'diminish)
 
 (customize-set-variable 'uniquify-buffer-name-style 'forward)
